@@ -13,10 +13,3 @@ For passing grade make sure to atleast write tests that makes sure that:
 - Correct a element class is rendered for linkKind
 
 - Correct IconCSSClass is rendered
-
-# Todo
-
-- Test href
-- Context
-- Simulate clicking
-- Style?
