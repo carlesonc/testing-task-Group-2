@@ -154,6 +154,14 @@ describe("Test 'renderModalLink()'", () => {
 		)
 		expect(wrapper.find("a").text()).toBe("Modal Link")
 	})
+	// it("renders href correctly", () => {
+	// 	const wrapper = mount(
+	// 		<UserContextProvider>
+	// 			<ActionPoint linkKind={2} />
+	// 		</UserContextProvider>
+	// 	)
+	// 	expect(wrapper.find("a").prop("href")).toBeTruthy()
+	// })
 })
 
 describe("Test 'renderDocumentLink()'", () => {
@@ -168,10 +176,10 @@ describe("Test 'renderDocumentLink()'", () => {
 	it("renders href correctly", () => {
 		const wrapper = mount(
 			<UserContextProvider>
-				<ActionPoint linkKind={3} linkDocument="Document link" />
+				<ActionPoint linkKind={3} linkDocument="linkDocument" />
 			</UserContextProvider>
 		)
-		expect(wrapper.find("a").prop("href")).toBe("Document link")
+		expect(wrapper.find("a").prop("href")).toBe("linkDocument")
 	})
 })
 
